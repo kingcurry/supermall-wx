@@ -1,0 +1,29 @@
+/* pages/home/homeChil/homeRecommend/recommend.wxss */
+.recommend {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  height: 250rpx;
+  border-bottom: 12rpx solid #eee;
+}
+
+.recommend-item{
+  text-align: center;
+  margin: 0 auto;
+  flex: 1;
+  vertical-align: middle;
+}
+
+.recommend-item > a > image {
+  display: block;
+  width: 130rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.recommend-item > a > text {
+  font-size: 24rpx;
+}
+

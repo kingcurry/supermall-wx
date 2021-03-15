@@ -1,0 +1,11 @@
+<!--miniprogram/pages/home/home.wxml-->
+<!-- swiper -->
+<y-swiper list="{{banner}}"></y-swiper>
+<!-- recommend -->
+<y-recommend recommends="{{recommends}}"></y-recommend>
+<!-- feature -->
+<view>
+  <a href="https://act.mogujie.com/zzlx67">
+    <image src="../../assets/img/home/recommend_bg.jpg" mode="widthFix" class="feature"></image>
+  </a>
+</view>

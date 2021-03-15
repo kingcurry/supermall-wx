@@ -1,0 +1,8 @@
+/* miniprogram/pages/home/home.wxss */
+page {
+  height: 1000vh;
+}
+
+.feature {
+  width: 100%;
+}

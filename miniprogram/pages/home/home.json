@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "y-swiper": "../../components/common/swiper/swiper",
+    "y-recommend": "./homeChil/homeRecommend/recommend"
+  }
+}
