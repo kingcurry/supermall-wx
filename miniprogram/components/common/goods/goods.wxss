@@ -1,0 +1,16 @@
+/* components/common/goods/goods.wxss */
+y-goods-item {
+  width: 48%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  height: 600rpx;
+}
+
+.goodsShow {
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

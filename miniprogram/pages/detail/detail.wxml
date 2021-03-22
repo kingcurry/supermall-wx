@@ -1,0 +1,10 @@
+<!--miniprogram/pages/detail/detail.wxml-->
+<!-- scroll-view -->
+<scroll-view scroll-y style="width:100%;height:{{scrollheight}}">
+  <!-- 轮播图 -->
+  <y-swiper list="{{topImages}}" class="y-swiper"></y-swiper>
+  <!-- 基本数据 -->
+  <y-base-info-show baseInfo="{{baseInfo}}"></y-base-info-show>
+  <!-- 商家数据 -->
+  <y-shop-info-show shopInfo="{{shopInfo}}"></y-shop-info-show>
+</scroll-view>

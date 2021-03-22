@@ -1,0 +1,14 @@
+<!--components/common/goods-item/goods-item.wxml-->
+<view class="goodsShow">
+    <view class="goodsShow-item" bindtap="goDetail" data-iid="{{goodsList.iid}}">
+      <image src="{{goodsList.show.img}}" mode="widthFix"></image>
+      <view class="goodsText">
+        <p class="goodsTitle">{{goodsList.title}}</p>
+        <view class="goodsPrice">
+          <span class="oldPrice">¥{{goodsList.price}}</span>
+          <image class='icon' src="/assets/images/common/favor.png" lazy-load="true"/>
+          <span class="goodsCfav">{{goodsList.cfav}}</span>
+        </view>
+      </view>
+    </view>
+</view>

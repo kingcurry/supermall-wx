@@ -1,0 +1,21 @@
+/* components/common/tabControl/tabControl.wxss */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 70rpx;
+}
+
+.tab-control {
+  flex: 1;
+  text-align: center;
+}
+
+.active {
+  color: #ff8198;
+}
+
+.active > text {
+  border-bottom: 6rpx solid  #ff8198;
+  padding: 8rpx 12rpx;
+  transition: all 0.3s ease-out;
+}

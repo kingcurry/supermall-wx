@@ -1,6 +1,9 @@
 {
   "usingComponents": {
     "y-swiper": "../../components/common/swiper/swiper",
+    "y-tabControl": "../../components/common/tabControl/tabControl",
+    "y-goods": "../../components/common/goods/goods",
+    "y-back-top":"../../components/common/backTop/backTop",
     "y-recommend": "./homeChil/homeRecommend/recommend"
   }
 }

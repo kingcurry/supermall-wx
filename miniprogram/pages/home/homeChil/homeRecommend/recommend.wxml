@@ -3,7 +3,7 @@
   <block wx:for="{{recommends}}" wx:key="index">
     <view class="recommend-item">
       <a href="{{item.link}}">
-        <image src="{{item.image}}" alt="" mode="widthFix"></image>
+        <image src="{{item.image}}" alt="" mode="widthFix" bindload="finishLoad"></image>
          <text>{{item.title}}</text>
       </a>
     </view>

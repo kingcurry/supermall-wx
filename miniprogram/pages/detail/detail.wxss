@@ -1,0 +1,8 @@
+/* miniprogram/pages/detail/detail.wxss */
+
+page {
+  padding: 0;
+  margin: 0;
+  height: 1000vh;
+}
+

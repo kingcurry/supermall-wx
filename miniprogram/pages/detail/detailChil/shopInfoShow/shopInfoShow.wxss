@@ -1,0 +1,115 @@
+/* pages/detail/detailChil/shopInfoShow/shopInfoShow.wxss */
+.shop {
+  padding: 50rpx 15rpx;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 8rpx solid #f2f5f8;
+}
+
+.shopImage {
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.shopTitle {
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+}
+
+.Title {
+  font-size: 32rpx;
+  line-height: 90rpx;
+}
+
+.shop-middle {
+  height: 200rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.shop-middle-left {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  font-size: 36rpx;
+  align-items: center;
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.shop-middle-sell {
+  display: flex;
+  flex-wrap: wrap;
+  height: 86rpx;
+  width: 86rpx;
+}
+
+.shopDescribe {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+}
+
+.shop-middle-sell > text {
+  display: block;
+}
+
+.shop-middle-goods {
+  display: flex;
+  flex-wrap: wrap;
+  height: 86rpx;
+  width: 95rpx;
+}
+
+.shop-middle-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 22rpx;
+}
+
+.shop-middle-right-item {
+  display: flex;
+  align-items: center;
+  flex: 1; 
+}
+
+.shop-middle-right-item > text:nth-child(2) {
+  width: 40rpx;
+  margin-left: 20rpx;
+}
+
+.shop-middle-right-item > text {
+  margin: 0 6rpx;
+}
+
+.getIn {
+  margin: 0 auto;
+  padding: 10rpx 100rpx;
+  background-color: #f2f5f8;
+  border-radius: 20rpx;
+}
+
+.better {
+  background-color: #f13e3a;
+  color: #ffffff;
+}
+
+.worse {
+  background-color: #5ea732;
+  color: #ffffff;
+}
+
+.betterScore {
+  color: #f13e3a;
+}
+
+.worseScore {
+  color: #5ea732;
+}

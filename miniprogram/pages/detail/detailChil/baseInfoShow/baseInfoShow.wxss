@@ -1,0 +1,64 @@
+/* pages/detail/detailChil/baseInfoShow/baseInfoShow.wxss */
+.title {
+  font-size: 32rpx;
+  margin: 10rpx;
+  display: block;
+}
+
+.n-price {
+  display: inline-block;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  font-size: 48rpx;
+  color: #ff5777;
+}
+
+.o-price {
+  font-size: 26rpx;
+  text-decoration-line: line-through;
+  color: #999999;
+}
+
+.price {
+  position: relative;
+}
+
+.discount {
+  position: absolute;
+  padding: 0 12rpx;
+  background-color: #ff5777;
+  border-radius: 20rpx;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+  color: #ffffff;
+  top: 25rpx;
+}
+
+.info-other {
+  margin: 0 auto;
+  width: 94%;
+  height: 60rpx;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 4rpx solid #f2f5f8;
+  color: #999999;
+}
+
+.info-server {
+  width: 100%;
+  display: flex;
+  color: #333333;
+  justify-content: space-around;
+  font-size: 26rpx;
+  height: 140rpx;
+  line-height: 140rpx;
+  border-bottom: 8rpx solid #f2f5f8;
+}
+
+.info-server-image {
+  display: inline-block;
+  height: 26rpx;
+  width: 26rpx;
+}

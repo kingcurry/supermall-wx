@@ -1,11 +1,31 @@
 <!--miniprogram/pages/home/home.wxml-->
-<!-- swiper -->
-<y-swiper list="{{banner}}"></y-swiper>
-<!-- recommend -->
-<y-recommend recommends="{{recommends}}"></y-recommend>
-<!-- feature -->
-<view>
-  <a href="https://act.mogujie.com/zzlx67">
-    <image src="../../assets/img/home/recommend_bg.jpg" mode="widthFix" class="feature"></image>
-  </a>
+<!-- hiddentabControl -->
+<view hidden="{{!istabControl}}">
+  <y-tabControl list="{{tabControl}}" bind:tabControlIndex="tabControlIndex"  class="movingTabControl"></y-tabControl>
 </view>
+<!-- scroll-view -->
+<scroll-view lower-threshold="10" 
+scroll-y scroll-with-animation="true" 
+enable-back-to-top="true" 
+bindscroll="scrollEvent"
+bindscrolltolower="scrolltolower" 
+style="width:100%;height:{{scrollheight}}px"
+scroll-top="{{topPosition}}">
+  <view>
+    <!-- swiper -->
+    <y-swiper list="{{banner}}"></y-swiper>
+    <!-- recommend -->
+    <y-recommend recommends="{{recommends}}" bind:RecImageFinsih="RecImageFinsih"></y-recommend>
+    <!-- feature -->
+    <view>
+      <a href="https://act.mogujie.com/zzlx67">
+        <image src="../../assets/images/home/recommend_bg.jpg" mode="widthFix" class="feature"></image>
+      </a>
+    </view>
+    <!-- tab-control -->
+    <y-tabControl list="{{tabControl}}" bind:tabControlIndex="tabControlIndex" id="tabControl"></y-tabControl>
+    <!-- goods -->
+    <y-goods list="{{goods[currentType].list}}"></y-goods>
+    <y-back-top bind:backTop="backTop" wx:if="{{isBackTop}}"></y-back-top>
+  </view>
+</scroll-view>

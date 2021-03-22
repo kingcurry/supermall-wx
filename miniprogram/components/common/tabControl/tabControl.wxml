@@ -1,0 +1,8 @@
+<!--components/common/tabControl/tabControl.wxml-->
+<view class="container">
+  <block wx:for="{{list}}" wx:key="index">
+    <view class="tab-control {{currentIndex === index ? 'active' : ''}}" bindtap="currentList" data-index="{{index}}">
+      <text class="tab-control-item">{{item}}</text>
+    </view>
+  </block>
+</view>

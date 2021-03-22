@@ -1,0 +1,31 @@
+<!--pages/detail/detailChil/shopInfoShow/shopInfoShow.wxml-->
+<view class="shop">
+    <view class="shopTitle">
+      <image src="{{shopInfo.logo}}" class="shopImage"></image>
+      <text class="Title">{{shopInfo.name}}</text>
+    </view>
+    <view class="shop-middle">
+      <view class="shop-middle-left">
+        <view class="shop-middle-sell">
+          <text>{{shopInfo.sells}}</text>
+          <text class="shopDescribe">总销售</text>
+        </view>
+        <view class="shop-middle-goods">
+          <text>{{shopInfo.goodsCount}}</text>
+          <text class="shopDescribe">全部宝贝</text>
+        </view>
+      </view>
+      <view class="shop-middle-right">
+        <block wx:for="{{shopInfo.score}}" wx:key="index">
+          <view class="shop-middle-right-item">
+            <text>{{item.name}}</text>
+            <text class="{{item.isBetter ? 'betterScore' : 'worseScore'}}">{{item.score}}</text>
+            <text class="{{item.isBetter ? 'better' : 'worse'}}">{{item.isBetter ? '高' : '低'}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="getIn">
+      进店看看
+    </view>
+  </view>

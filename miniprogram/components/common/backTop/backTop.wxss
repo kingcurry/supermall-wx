@@ -1,0 +1,13 @@
+/* components/backTop/backTop.wxss */
+.backTop {
+  position: fixed;
+  z-index: 9;
+  bottom: 30rpx;
+  right: 20rpx;
+}
+
+.backTop > image {
+  display: block;
+  height: 86rpx;
+  width: 86rpx;
+}

@@ -1,0 +1,24 @@
+<!--pages/detail/detailChil/baseInfoShow/baseInfoShow.wxml-->
+<view>
+  <view>
+    <text class="title">{{baseInfo.title}}</text>
+  </view>
+  <view class="price">
+    <text class="n-price">{{baseInfo.newPrice}}</text>
+    <text class="o-price">{{baseInfo.oldPrice}}</text>
+    <text class="discount">{{baseInfo.discount}}</text>
+  </view>
+  <view class="info-other">
+    <block wx:for="{{baseInfo.columns}}" wx:key="index">
+      <text>{{item}}</text>
+    </block>
+  </view>
+  <view class="info-server">
+    <block wx:for="{{baseInfo.services}}" wx:key="index">
+      <view>
+        <image src="{{item.icon}}" class="info-server-image"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "y-swiper": "../../components/common/swiper/swiper",
+    "y-base-info-show": "./detailChil/baseInfoShow/baseInfoShow",
+    "y-shop-info-show": "./detailChil/shopInfoShow/shopInfoShow"
+  }
+}

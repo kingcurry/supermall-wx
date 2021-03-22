@@ -1,0 +1,41 @@
+/* components/common/goods-item/goods-item.wxss */
+
+
+
+.goodsShow-item > image {
+  width: 96%;
+  border-radius: 16rpx;
+}
+
+.goodsText {
+  font-size: 20rpx;
+}
+
+.goodsTitle {
+  position: absolute;
+  bottom: 30rpx;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 12rpx;
+
+}
+
+.goodsPrice {
+  position: absolute;
+  bottom: 10rpx;
+  left: 35%;
+}
+
+.oldPrice {
+  color: #ff8198;
+}
+
+.goodsPrice > image {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: middle;
+  padding-left: 10rpx;
+}
