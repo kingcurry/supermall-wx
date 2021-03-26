@@ -1,14 +1,10 @@
-// pages/detail/detailChil/baseInfoShow/baseInfoShow.js
+// pages/detail/detailChil/commentInfo/commentInfo.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    baseInfo: {
-      type: Object,
-      data: {}
-    },
-    detailInfo: {
+    commentInfo: {
       type: Object,
       data: {}
     }

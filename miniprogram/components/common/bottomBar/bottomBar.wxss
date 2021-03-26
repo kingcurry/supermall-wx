@@ -1,0 +1,54 @@
+/* components/common/bottomBar/bottomBar.wxss */
+.bottom-bar {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  z-index: 9;
+}
+
+.bar-left {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  background-color: #f6f6f6;
+}
+
+.bar-left-item {
+  flex: 1;
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-left-item > image {
+  display: block;
+  width: 44rpx;
+  width: 44rpx;
+}
+
+.bar-right {
+  flex: 1;
+}
+
+.bar-right {
+  display: flex;
+  text-align: center;
+  height: 100%;
+  color: #ffffff;
+  line-height: 100rpx;
+  font-size: 30rpx;
+}
+
+.shopCart {
+  flex: 1;
+  background-color: #ff5777;
+}
+
+.buy {
+  flex: 1;
+  background-color: #ff4220;
+}

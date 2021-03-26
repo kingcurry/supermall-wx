@@ -1,0 +1,8 @@
+<!--pages/category/categoryChil/categoryMenu/categoryMenu.wxml-->
+<scroll-view scroll-y class="menu">
+  <block wx:for="{{categories}}">
+    <view class="menu-item">
+      {{item.title}}
+    </view>
+  </block>
+</scroll-view>

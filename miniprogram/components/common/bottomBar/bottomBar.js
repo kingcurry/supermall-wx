@@ -1,16 +1,12 @@
-// pages/detail/detailChil/baseInfoShow/baseInfoShow.js
+// components/common/bottomBar/bottomBar.js
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    baseInfo: {
-      type: Object,
-      data: {}
-    },
-    detailInfo: {
-      type: Object,
-      data: {}
+    bottomBar: {
+      type: Array,
+      data: []
     }
   },
 

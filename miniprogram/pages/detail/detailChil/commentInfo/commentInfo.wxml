@@ -1,0 +1,26 @@
+<!--pages/detail/detailChil/commentInfo/commentInfo.wxml-->
+<view wx:if="{{commentInfo}}" class="comment-info">
+  <view class="comment-info-header">
+    <text>用户评价</text>
+    <text>更多</text>
+  </view>
+  <view class="comment-info-item">
+    <view class="info-user">
+      <image src="{{commentInfo.user.avatar}}"></image>
+      <text>{{commentInfo.user.uname}}</text>
+    </view>
+    <view class="info-content">
+      {{commentInfo.content}}
+    </view>
+    <view class="other-info">
+      <text>
+        {{m1.dateFormat(commentInfo.created)}}
+      </text>
+      <text>
+        {{commentInfo.style}}
+      </text>
+    </view>
+  </view>
+</view>
+
+<wxs module="m1" src="../fomatTimeStame/fomatTimeStame.wxs"></wxs>

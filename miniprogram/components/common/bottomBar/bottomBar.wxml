@@ -1,0 +1,19 @@
+<!--components/common/bottomBar/bottomBar.wxml-->
+<view class="bottom-bar">
+  <view class="bar-left">
+    <block wx:for="{{bottomBar}}" wx:key="index">
+      <view class="bar-left-item">
+        <image src="{{item.src}}" mode="widthFix"></image>
+        <text>{{item.text}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="bar-right">
+    <view class="shopCart">
+      加入购物车
+    </view>
+    <view class="buy">
+      购买
+    </view>
+  </view>
+</view>

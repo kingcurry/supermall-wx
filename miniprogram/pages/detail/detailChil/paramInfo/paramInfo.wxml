@@ -1,0 +1,9 @@
+<!--pages/detail/detailChil/paramInfo/paramInfo.wxml-->
+<view class="param-info">
+  <block wx:for="{{paramInfo.infos}}" wx:key="index">
+    <view class="param-info-item">
+      <text class="tr">{{item.key}}</text>
+      <text class="td">{{item.value}}</text>
+    </view>
+  </block>
+</view>

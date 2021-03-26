@@ -1,0 +1,12 @@
+/* pages/category/categoryChil/categoryMenu/categoryMenu.wxss */
+.menu {
+  font-size: 28rpx;
+  background-color: #f6f6f6;
+}
+
+.menu-item {
+  width: 192rpx;
+  height: 84rpx;
+  text-align: center;
+  line-height: 84rpx;
+}

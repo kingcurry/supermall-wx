@@ -12,11 +12,17 @@ Page({
    */
   data: {
     navBar: ['商品','参数','评论','推荐'],
+    bottomBar:[
+      {src: '../../../assets/images/detail/service.png',text: '客服'},
+      {src: '../../../assets/images/detail/shop.png',text: '店铺'},
+      {src: '../../../assets/images/detail/collect.png',text: '收藏'}
+    ],                  
     topImages: [],
     iid: '',
     baseInfo: {},
     shopInfo: {},
     paramInfo: {},
+    detailInfo:{},
     commentInfo: {},
     recommendsData: {},
     scrollheight:''
@@ -44,7 +50,6 @@ Page({
       const data = res.data.result;
       const topImages = data.itemInfo.topImages;
       const baseInfo =new GoodsBaseInfo(data.itemInfo, data.columns, data.shopInfo.services);
-      console.log(baseInfo);
       baseInfo.services.pop();
       const shopInfo = new ShopInfo(data.shopInfo);
       const detailInfo = data.detailInfo;

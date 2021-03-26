@@ -22,3 +22,21 @@
     </block>
   </view>
 </view>
+
+<view class="info">
+  <view class="desc-start"></view>
+  <view class="info-desc">
+    {{baseInfo.desc}}
+  </view>
+  <view class="desc-end"></view>
+  <view class="info-key">
+    穿着效果
+  </view>
+  <view class="info-list">
+    <block wx:for="{{detailInfo.detailImage[0].list}}" wx:key="index">
+      <view class="info-list-item">
+        <image src="{{item}}" mode="widthFix" lazy-load></image>
+      </view>
+    </block>
+  </view>
+</view>

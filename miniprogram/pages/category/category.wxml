@@ -1,2 +1,2 @@
 <!--miniprogram/pages/category/category.wxml-->
-<text>miniprogram/pages/category/category.wxml</text>
+<y-category-menu categories="{{categories}}" class="category-menu"></y-category-menu>

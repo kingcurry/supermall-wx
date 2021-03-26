@@ -1,7 +1,12 @@
 {
   "usingComponents": {
     "y-swiper": "../../components/common/swiper/swiper",
+    "y-bottom-bar": "../../components/common/bottomBar/bottomBar",
+    "y-goods": "../../components/common/goods/goods",
+    "y-param-info": "./detailChil/paramInfo/paramInfo",
     "y-base-info-show": "./detailChil/baseInfoShow/baseInfoShow",
+    "y-comment-info": "./detailChil/commentInfo/commentInfo",
     "y-shop-info-show": "./detailChil/shopInfoShow/shopInfoShow"
+    
   }
 }

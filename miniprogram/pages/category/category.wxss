@@ -1,1 +1,4 @@
 /* miniprogram/pages/category/category.wxss */
+.category-menu {
+  width: 30%;
+}

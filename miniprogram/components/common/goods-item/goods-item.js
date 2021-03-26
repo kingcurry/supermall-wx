@@ -23,6 +23,7 @@ Component({
   methods: {
     goDetail(e) {
       const iid = e.currentTarget.dataset.iid;
+      console.log(e);
       wx.navigateTo({
         url: '../detail/detail?iid='+iid+''
       })

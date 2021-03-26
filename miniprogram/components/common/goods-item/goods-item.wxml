@@ -1,7 +1,7 @@
 <!--components/common/goods-item/goods-item.wxml-->
 <view class="goodsShow">
-    <view class="goodsShow-item" bindtap="goDetail" data-iid="{{goodsList.iid}}">
-      <image src="{{goodsList.show.img}}" mode="widthFix"></image>
+    <view class="goodsShow-item" bindtap="goDetail" data-iid="{{goodsList.iid || goodsList.item_id}}">
+      <image src="{{goodsList.show.img || goodsList.image}}" mode="widthFix"></image>
       <view class="goodsText">
         <p class="goodsTitle">{{goodsList.title}}</p>
         <view class="goodsPrice">

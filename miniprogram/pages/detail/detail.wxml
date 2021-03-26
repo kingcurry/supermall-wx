@@ -4,7 +4,17 @@
   <!-- 轮播图 -->
   <y-swiper list="{{topImages}}" class="y-swiper"></y-swiper>
   <!-- 基本数据 -->
-  <y-base-info-show baseInfo="{{baseInfo}}"></y-base-info-show>
+  <y-base-info-show baseInfo="{{baseInfo}}" detailInfo="{{detailInfo}}"></y-base-info-show>
   <!-- 商家数据 -->
   <y-shop-info-show shopInfo="{{shopInfo}}"></y-shop-info-show>
+  <!-- 商品参数 -->
+<y-param-info paramInfo="{{paramInfo}}"></y-param-info>
+<!-- 用户评价 -->
+<y-comment-info commentInfo="{{commentInfo}}"></y-comment-info>
+<!-- 商品推荐 -->
+<view class="recommend">
+  <y-goods list="{{recommendsData}}"></y-goods>
+</view>
 </scroll-view>
+<!-- 底部工具栏 -->
+<y-bottom-bar bottomBar="{{bottomBar}}"></y-bottom-bar>
